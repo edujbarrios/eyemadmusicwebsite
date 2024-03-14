@@ -5,7 +5,7 @@
 # "EYEMAD's" DJ / PRODUCER WEBSITE 🎶 
 
 
-See it live [Here](https://edujbarrios.github.io/eyemadwebsite/)
+See it live [Here](https://edujbarrios.github.io/eyemadmusicwebsite/)
 
 ]This version is unorganized in folders, due togithub and Pages, deployed by github.io, so that I created a stable version caring a bit less of project strcuture, and only focusing on designing a way to let it working with github.io. 
 
