@@ -1,0 +1,30 @@
+name: Verificar Estabilidad del Sitio Web
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Ejecuta el trabajo a medianoche UTC
+
+jobs:
+  check-site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Configurar Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+      - name: Ejecutar script
+        run: python security.py
+      - name: Configurar Git
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+      - name: Hacer commit de los cambios
+        run: |
+          git add checks/log.csv
+          git commit -m "Checks done and page running"
+          git push
