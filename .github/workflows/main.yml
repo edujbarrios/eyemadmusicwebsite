@@ -1,4 +1,4 @@
-name: Verificar Estabilidad del Sitio Web
+ name: Verificar Estabilidad del Sitio Web
 
 on:
   schedule:
@@ -7,6 +7,9 @@ on:
 jobs:
   check-site:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Permite que las acciones escriban en el repositorio
+
     steps:
       - uses: actions/checkout@v2
       - name: Configurar Python
@@ -26,5 +29,5 @@ jobs:
       - name: Hacer commit de los cambios
         run: |
           git add checks/log.csv
-          git commit -m "Checks done and page running"
+          git commit -m "Checks done and page running" || echo "No changes to commit"
           git push
