@@ -12,7 +12,3 @@ document.getElementById('menuToggle').addEventListener('click', function() {
   const mobileMenuButton = document.getElementById("mobile-menu");
   const navList = document.querySelector("nav ul");
   
-  mobileMenuButton.addEventListener("click", () => {
-    navList.classList.toggle("active");
-  });
-  
