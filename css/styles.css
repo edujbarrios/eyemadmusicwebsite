@@ -587,7 +587,7 @@ button {
   bottom: 0;
   width: 5px;
   height: 100%;
-  background: linear-gradient(45deg, #04051dea 0%, #8c8e00 100%);
+  background: linear-gradient(45deg, #04051dea 0%, #9b9e05 100%);
   z-index: -1;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
@@ -613,4 +613,77 @@ button {
 
 .content .btn:active {
   box-shadow: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fbff00; /* Text color */
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 90%; /* Adjusted max-width */
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5em; /* Decreased font size */
+  margin-bottom: 15px; /* Decreased margin */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ffffff; /* Text color */
+}
+
+.hero-content p {
+  font-size: 1.5em; /* Decreased font size */
+  margin-bottom: 20px; /* Decreased margin */
+}
+
+.highlight {
+  color: #ffffff; /* Highlight color */
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px; /* Adjusted padding */
+  background: linear-gradient(45deg, #04051dea 0%, #585900 100%);
+  border: 2px solid #fbff00;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  font-size: 1.2em; /* Decreased font size */
+}
+
+.btn:hover {
+  background-color: #666400; /* Button hover background color */
+}
+
+.fa-arrow-right {
+  margin-left: 10px; /* Decreased margin */
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+      font-size: 2.5em; /* Adjusted font size for smaller screens */
+  }
+  .hero-content p {
+      font-size: 1.2em; /* Adjusted font size for smaller screens */
+  }
+  .btn {
+      padding: 12px 24px; /* Adjusted padding for smaller screens */
+      font-size: 1em; /* Adjusted font size for smaller screens */
+  }
 }
