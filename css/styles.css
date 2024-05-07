@@ -687,3 +687,13 @@ body {
       font-size: 1em; /* Adjusted font size for smaller screens */
   }
 }
+
+/* CSS Styles for Mobile Devices */
+@media only screen and (max-width: 600px) {
+  /* Center-align the text at the end of the document */
+  body > div:last-child,
+  #contact p {
+    text-align: center;
+  }
+}
+
