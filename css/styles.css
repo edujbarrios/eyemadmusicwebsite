@@ -392,11 +392,12 @@ button {
 
 .cta-btn {
   padding: 0.75rem 2rem;
-  border: 2px solid hsl(179, 100%, 50%);
+  border: 2px solid #fbff00;
   border-radius: 30px;
-  color: hsl(179, 100%, 50%);
+  color: white;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  background: linear-gradient(to right, hsl(0, 0%, 13%), #767801);
 }
 
 .cta-btn:hover {
@@ -536,84 +537,80 @@ button {
   }
 }
 
-.terminal-loader {
-  border: 0.1em solid #333;
-  background-color: #1a1a1a;
-  color: #fbff00;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 1em;
-  padding: 1.5em 1em;
-  width: 12em;
-  margin: 100px auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+.tarjeta {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 32px;
   overflow: hidden;
-  box-sizing: border-box;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.terminal-header {
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: #e8e8e8;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content .heading {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.content .para {
+  line-height: 1.5;
+}
+
+.content .btn {
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(45deg, #04051dea 0%, #585900 100%);
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta::before {
+  content: "";
   position: absolute;
-  top: 0;
   left: 0;
-  right: 0;
-  height: 1.5em;
-  background-color: #333;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  padding: 0 0.4em;
-  box-sizing: border-box;
+  bottom: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(45deg, #04051dea 0%, #8c8e00 100%);
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.terminal-controls {
-  float: right;
+.tarjeta:hover::before {
+  width: 100%;
 }
 
-.control {
-  display: inline-block;
-  width: 0.6em;
-  height: 0.6em;
-  margin-left: 0.4em;
-  border-radius: 50%;
-  background-color: #777;
+.tarjeta:hover {
+  box-shadow: none;
 }
 
-
-.terminal-title {
-  float: left;
-  line-height: 1.5em;
-  color: #eee;
+.tarjeta:hover .btn {
+  color: #212121;
+  background: #e8e8e8;
 }
 
-.text {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 0.2em solid #00ffe1; /* Cursor */
-  animation: typeAndDelete 5s steps(13) infinite,
-             blinkCursor 0.5s step-end infinite alternate;
-  margin-top: 1.5em;
+.content .btn:hover {
+  outline: 2px solid #e8e8e8;
+  background: transparent;
+  color: #e8e8e8;
 }
 
-@keyframes typeAndDelete {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 100%;
-  }
-  100% {
-    width: 0;
-  }
+.content .btn:active {
+  box-shadow: none;
 }
-
-@keyframes blinkCursor {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #00ffe1;
-  }
-}
-

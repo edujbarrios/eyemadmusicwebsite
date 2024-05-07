@@ -71,9 +71,31 @@
   <a href="https://EyeMadxBeatmad.lnk.to/OpenRoad" target="_blank" class="pre-save-link">Stream "Open Road" at Paraiso and Warner Music Benelux</a>
 </section>
 
+<section id="articles">
+  <h2>Articles</h2>
+  <div class="tarjeta">
+    <div class="content">
+      <p class="heading">Soon :)</p>
+      <p class="para">Will be updated weekly with new articles</p>
+      <a href="articles/musicprod.html" class="btn">Not available by now</a>
+    </div>
+  </div>
+  <div>
+
+</section>
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('.pre-save-link').addEventListener('click', function (event) {
+          event.preventDefault();
+          window.location.href = 'pages/open_road.html';
+      });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('.article1').addEventListener('click', function (event) {
           event.preventDefault();
           window.location.href = 'pages/open_road.html';
       });
@@ -140,13 +162,15 @@
   </a>
 </section>
 
+
+
 <section id="services">
   <h2>Services</h2>
   <section id="Services">
     <div class="card">
       <div class="content">
         <div class="title">Open to projects of any kind</div>
-        <div class="price">0.99€</div>
+
         <div class="description">Getting a powerful mix helps a producer or Artist/Singer to get the best on their productions, or even producing it myself for you. If you like how my songs are made, feel free to contact me and let's discuss your thoughts :)</div>
       </div>
       <button id="contactButton">Contact Me</button>
