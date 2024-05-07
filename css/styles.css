@@ -621,15 +621,17 @@ body {
 }
 
 .hero {
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fbff00; /* Text color */
-  text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
+    width: 100vw; /* Ocupa el 100% del ancho de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fbff00; /* Color del texto */
+    text-align: center;
 }
+
 
 .hero-content {
   max-width: 90%; /* Adjusted max-width */
@@ -675,15 +677,3 @@ body {
   margin-left: 10px; /* Decreased margin */
 }
 
-@media (max-width: 768px) {
-  .hero-content h1 {
-      font-size: 2.5em; /* Adjusted font size for smaller screens */
-  }
-  .hero-content p {
-      font-size: 1.2em; /* Adjusted font size for smaller screens */
-  }
-  .btn {
-      padding: 12px 24px; /* Adjusted padding for smaller screens */
-      font-size: 1em; /* Adjusted font size for smaller screens */
-  }
-}
