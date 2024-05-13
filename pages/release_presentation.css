@@ -1,11 +1,11 @@
 body {
     margin: 20px; /* Ajustar márgenes */
     padding: 0;
-    background: linear-gradient(30deg, #000000, #635e01);
+    background: linear-gradient(30deg, #000000, #016360);
     background-size: 200% 200%;
     animation: gradient 20s ease infinite;
     font-family: 'Product Sans', sans-serif; 
-    color: #fbff00;
+    color: #93f5f3;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
@@ -65,9 +65,9 @@ header {
     box-sizing: border-box;
     border-width: 5px;
     border-style: solid;
-    border-image: linear-gradient(45deg, #fbff00 0%, #585900 100%);
+    border-image: linear-gradient(45deg, #93f5f3 0%, #93f5f36b 100%);
     border-image-slice: 1;
-    box-shadow: 0 40px 15px -3px #fbff00, 0 4px 6px -4px rgba(33,150,243,.4); /* Aplica el efecto de sombra de caja */
+    box-shadow: 0 40px 15px -3px #93f5f3, 0 4px 6px -4px rgba(33,150,243,.4); /* Aplica el efecto de sombra de caja */
 }
 
 .description {
@@ -92,9 +92,9 @@ button {
     display: inline-block;
     margin: 0.5rem;
     padding: 1rem;
-    border: 2px solid #fbff00;
+    border: 2px solid #93f5f3;
     border-radius: 10px;
-    background: linear-gradient(45deg, #04051dea 0%, #585900 100%);
+    background: linear-gradient(45deg, #04051dea 0%, #93f5f36b 100%);
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -103,7 +103,7 @@ button {
 }
 
 button:hover {
-    background: #585900;
+    background: #93f5f36b;
     color: rgb(255, 255, 255);
 }
 
@@ -111,16 +111,16 @@ button:hover {
     display: inline-block;
     margin: 0.5rem;
     padding: 1rem;
-    border: 2px solid #fbff00;
+    border: 2px solid #93f5f36b;
     border-radius: 10px;
-    color: #fbff00;
+    color: #93f5f3;
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .back-to-homepage:hover {
-    background: #585900;
+    background: #93f5f36b;
     color: rgb(255, 255, 255);
 }
 
