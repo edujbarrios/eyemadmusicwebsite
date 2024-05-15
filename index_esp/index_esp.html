@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EyeMad WebPage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<header class="hero">
+  <div class="hero-content">
+      <h1>@eyemadmusic</h1>
+      <p>Experimenta las <span class="highlight">Mad Vibes</span>.</p>
+      <a href="../index.html" class="translate-button">Traducir al Inglés 🌐</a>
+      <a href="#biografia" class="btn">Saber Más <i class="fas fa-arrow-right"></i></a>
+  </div>
+</header>
+
+<body>
+
+<div id="menuToggle" class="menu-icon">
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+</div>
+
+<div id="menu" class="hidden">
+  <a href="#biografia">Biografía</a>
+  <a href="#enlaces-streaming">Encuéntrame en</a>
+  <a href="#listas-reproduccion">Listas de Reproducción y Publicaciones</a>
+  <a href="#servicios">Servicios</a>
+</div>
+
+<header>
+  <img src="../images/logoo.png" alt="Logo" />
+</header>
+
+<section id="biography">
+  <h2>Biografía</h2>
+  <img src="../images/main.png" alt="EyeMad" width="200">
+  <p>Eduardo José Barrios García, conocido profesionalmente como EyeMad, es un compositor y productor musical destacado de Tenerife, España. Desde joven, mostró un profundo interés por el diverso paisaje musical, particularmente inspirado por las melodías emocionalmente resonantes del pop y rock español de principios del siglo XXI. Esta inspiración guió su viaje creativo, buscando impregnar sus composiciones con una profundidad emocional similar y un diseño sonoro intrincado.</p>
+  <p>Impulsado por una pasión intrínseca por la expresión musical, EyeMad emprendió una formación formal en guitarra y teoría musical. Aprovechando estas habilidades fundamentales, ha cultivado desde entonces una voz musical única, empujando los límites de los géneros convencionales para crear una paleta sonora distintiva y emocionalmente resonante.</p>
+  <p>La trayectoria de la carrera de EyeMad puede caracterizarse como una búsqueda continua de innovación musical. Con un compromiso con la evolución artística, busca constantemente actualizar y modernizar los paisajes sonoros existentes. Su enfoque innovador lo ha posicionado como un talento emergente en una variedad de géneros, incluyendo pero no limitándose a Reggaeton, Dancehall, Progressive House y Deep House. A medida que continúa forjando su camino en la industria musical, EyeMad promete ser una figura transformadora en los años venideros.</p>
+  <div id="photo"></div>
+</section>
+
+<section id="streaming-links">
+  <h2>Encuéntrame en</h2>
+  <a href="https://open.spotify.com/intl-es/artist/2C15mEsXxAqiKWKG4skXHY" target="_blank">Spotify</a>
+  <a href="https://soundcloud.com/eyemadmusic" target="_blank">SoundCloud</a>
+  <a href="https://music.apple.com/es/artist/eyemad/1498674535" target="_blank">Apple Music</a>
+  <a href="https://www.instagram.com/eyemadmusic/" target="_blank">Instagram</a>
+</section>
+
+<section id="listas-reproduccion">
+  <h2>Listas de Reproducción</h2>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2CdCwjMKxSoUktPcbTV3tY?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</section>
+
+<section id="pre-save">
+  <h2>Nuevo Contenido</h2>
+  <a href="https://EyeMadxBeatmad.lnk.to/OpenRoad" target="_blank" class="pre-save-link">Escucha "Open Road" en Paraiso y Warner Music Benelux</a>
+</section>
+
+<section id="articulos">
+  <h2>Artículos</h2>
+  <div class="tarjeta">
+    <div class="content">
+      <p class="heading">El Futuro de la Música en la Era de la Inteligencia Artificial</p>
+      <p class="para">Las noticias recientes han mostrado el potencial de la IA, pero, ¿es realmente útil para hacer música?</p>
+      <a href="../articles_esp/musicprodesp.html" class="btn">Leer ahora</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('.pre-save-link').addEventListener('click', function (event) {
+          event.preventDefault();
+          window.location.href = '../pages/open_road_esp.html';
+      });
+  });
+</script>
+
+<section id="milestones">
+  <h2>Logros</h2>
+  <button role="button" class="golden-button">
+    <span class="golden-text">+1M escuchas en 2024 hasta el momento en spotify</span>
+  </button>
+</section>
+
+<h2>Lanzamientos Recientes</h2>
+
+<section id="posts">
+  <a href="https://open.spotify.com/intl-es/track/62F0Yh1vPmekAClNvxx3lo?si=3b2df7a95c034043" target="_blank">
+    <div class="post-card">
+      <h3>Escucha "Muse"</h3>
+      <img src="../images/muse.jpeg" alt="Imagen del Post 2">
+      <p>Una aventura profunda en sonidos y vibraciones gracias a la fusión de Organic House</p>
+    </div>
+  </a>
+
+  <a href="https://open.spotify.com/intl-es/track/3kKlJr3EisMQXl843sEMsS?si=c8a749bc6e23494e" target="_blank">
+    <div class="post-card">
+      <h3>Escucha "Say A Word"</h3>
+      <img src="../images/sayaword.png" alt="Imagen del Post 2">
+      <p>"Say a Word" sobre esta majestuosa canción de deep guitar house!</p>
+    </div>
+  </a>
+
+  <a href="https://open.spotify.com/intl-es/track/2wZ5jupmlzeIbXkXUJaMd3?si=59798a2f5f124970" target="_blank">
+    <div class="post-card">
+      <h3>Escucha "You"</h3>
+      <img src="../images/you.png" alt="Imagen del Post 2">
+      <p>Una canción perfecta para el verano que mejora tu flujo de trabajo.</p>
+    </div>
+  </a>
+
+  <a href="https://open.spotify.com/intl-es/track/4G3gRYipFMzIDJGrMyPavh?si=f1e1a190861f4f69" target="_blank">
+    <div class="post-card">
+      <h3>Escucha "Summer Days"</h3>
+      <img src="../images/summer.png" alt="Imagen del Post 2">
+      <p>Vibraciones de verano retratadas en una canción.</p>
+    </div>
+  </a>
+
+  <a href="https://open.spotify.com/intl-es/track/1BeRiki6GCuUQaqcwcl4jX?si=4b038afdf18145ca" target="_blank">
+    <div class="post-card">
+      <h3>Escucha "IFSG"</h3>
+      <img src="../images/I.png" alt="Imagen del Post 2">
+      <p>¿Quieres sentirte bien mientras escuchas una canción?</p>
+    </div>
+  </a>
+
+  <a href="https://open.spotify.com/intl-es/track/0d6xmZXV9U2tCYbbQo7qGe?si=34a9fae5abff4f93" target="_blank">
+    <div class="post-card">
+      <h3>Escucha "Collide"</h3>
+      <img src="../images/collide.png" alt="Imagen del Post 2">
+      <p>La canción perfecta para escuchar si estás en un ambiente romántico ❤️</p>
+    </div>
+  </a>
+</section>
+
+<section id="servicios">
+  <h2>Servicios</h2>
+  <section id="Servicios">
+    <div class="card">
+      <div class="content">
+        <div class="title">Abierto a proyectos de cualquier tipo</div>
+        <div class="description">Obtener una mezcla poderosa ayuda a un productor o Artista/Cantante a obtener lo mejor de sus producciones, o incluso producirla yo mismo para ti. Si te gusta cómo se hacen mis canciones, no dudes en contactarme y discutamos tus ideas :)</div>
+      </div>
+      <button id="contactButton">Contáctame</button>
+    </div>
+  </section>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="container">
+    <a href="#hero" class="back-to-top" aria-label="volver arriba">
+      <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+    </a>
+    <hr />
+    <p class="footer__text">
+      &copy; <span id="year"></span> EyeMad Music. Todos los Derechos Reservados. <br />
+    </p>
+  </div>
+</footer>
+
+<script>
+document.getElementById("contactButton").addEventListener("click", function() {
+  window.location.href = "mailto:eduardojbarriosgarcia@gmail.com";
+});
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

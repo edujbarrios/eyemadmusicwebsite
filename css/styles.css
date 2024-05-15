@@ -650,3 +650,92 @@ button {
     text-align: center;
   }
 }
+/* Estilo existente del botón de traducción */
+.translate-button {
+  background: linear-gradient(145deg, #007366, #00b8a3);
+  color: white;
+  font-weight: bold; /* Texto en negrita */
+  text-decoration: none; /* Sin subrayado */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), inset 0 5px 10px rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.translate-button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: rotate(45deg);
+}
+
+.translate-button:hover::before {
+  opacity: 1;
+  transform: rotate(45deg) translate(50%, 50%);
+}
+
+.translate-button:hover {
+  background: linear-gradient(145deg, #018f7e, #009c8a);
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), inset 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.translate-button:active {
+  background: linear-gradient(145deg, #004b42, #006c60);
+  transform: scale(0.98);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), inset 0 3px 7px rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo para asegurar que los botones se apilen y tengan espacio entre ellos */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-content a {
+  margin: 10px 0; /* Espacio vertical entre los botones */
+}
+
+/* Estilo adicional para el botón de explorar más */
+.btn {
+  background-color: #ff6347; /* Color de fondo */
+  color: white;
+  font-weight: bold; /* Texto en negrita */
+  text-decoration: none; /* Sin subrayado */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn i {
+  margin-left: 8px; /* Espacio entre el texto y el icono */
+}
+
+.btn:hover {
+  background-color: #e55347;
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.btn:active {
+  background-color: #c44337;
+  transform: scale(0.98);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
