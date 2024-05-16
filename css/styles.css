@@ -739,3 +739,29 @@ button {
   transform: scale(0.98);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* CSS Styles for Mobile Devices */
+@media only screen and (max-width: 600px) {
+  .article-container {
+      padding: 10px;
+  }
+
+  .article-header h1 {
+      font-size: 2rem;
+  }
+
+  .img-container {
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .article-content {
+      font-size: 1rem;
+      margin-top: 10px;
+  }
+
+  button, .back-to-homepage {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+  }
+}
