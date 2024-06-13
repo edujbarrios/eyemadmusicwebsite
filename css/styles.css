@@ -35,6 +35,12 @@ header img {
   width: 400px;
 }
 
+@media only screen and (max-width: 600px) {
+  header img {
+    width: 90%;
+  }
+}
+
 /* Section Styles */
 section {
   padding: 1rem;
@@ -650,6 +656,7 @@ button {
     text-align: center;
   }
 }
+
 /* Estilo existente del botón de traducción */
 .translate-button {
   background: linear-gradient(145deg, #007366, #00b8a3);
@@ -743,25 +750,88 @@ button {
 /* CSS Styles for Mobile Devices */
 @media only screen and (max-width: 600px) {
   .article-container {
-      padding: 10px;
+    padding: 10px;
   }
 
   .article-header h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .img-container {
-      width: 100%;
-      max-width: 100%;
+    width: 100%;
+    max-width: 100%;
   }
 
   .article-content {
-      font-size: 1rem;
-      margin-top: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
   }
 
   button, .back-to-homepage {
-      padding: 0.5rem;
-      font-size: 0.9rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header img {
+    width: 90%;
+  }
+  
+  .hero .hero-content h1 {
+    font-size: 2.5em;
+  }
+
+  .hero .hero-content p {
+    font-size: 1.2em;
+  }
+
+  .hero .btn {
+    padding: 12px 24px;
+    font-size: 1em;
+  }
+  
+  .translate-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  #biography {
+    max-width: 90%;
+  }
+
+  #biography h2 {
+    margin-top: -50px;
+  }
+
+  #streaming-links {
+    max-width: 90%;
+  }
+
+  #artist-playlist {
+    max-width: 90%;
+  }
+
+  #posts {
+    max-width: 90%;
+  }
+
+  .post-card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .cards-container {
+    gap: 10px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 10px 1px;
   }
 }
